@@ -28,5 +28,14 @@ public abstract class Camera {
         Logger.getInstance().log(getName() + " is done taking this photograph");
     }
 
-    public abstract String getName() ;
+    public abstract String getName();
+
+    public ShutterOperations getShutterOps() {
+        return shutterOps;
+    }
+
+    public MirrorOperations getMirrorOps() {
+        return mirrorOps;
+    }
+
 }
